@@ -1,11 +1,8 @@
 body {
   font-family: "Roboto Mono", monospace;
   text-align: center;
-  background-image: url("");
   background-color: #000000;
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
+
 }
 
 .div-background {
@@ -29,10 +26,11 @@ body {
 }
 
 .page-title {
-  color: #ffd700;
+  color: #FADA5E;
   opacity: 0.8;
-  font-size: 40px;
+  font-size: 56px;
   font-family: Friz Quadrata;
+  transition: all 0.3s ease;
    text-shadow: rgb(59, 58, 58) 0px 0px 0px,
       rgb(59, 58, 58) 0.669131px 0.743145px 0px,
       rgb(59, 58, 58) 1.33826px 1.48629px 0px,
@@ -449,6 +447,16 @@ ul {
   width: 100%;
 }
 
+#btn-div {
+  cursor: pointer;
+  background: #FADA5E;
+  border: none;
+  z-index: 1;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+   background: linear-gradient(0deg, rgb(201, 158, 130) 0%, rgb(251, 185, 2) 100%);
+}
 
 
 #btnJogar{
