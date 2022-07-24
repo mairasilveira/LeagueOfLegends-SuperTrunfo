@@ -1,4 +1,1 @@
-# LOLBattleCardsGame
-
-A Pen created on CodePen.io. Original URL: [https://codepen.io/mairasilveiras/pen/WNMLzWj](https://codepen.io/mairasilveiras/pen/WNMLzWj).
-
+Battle Card Game do LOL. X1 noob?
