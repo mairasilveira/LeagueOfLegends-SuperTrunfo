@@ -2,26 +2,17 @@
 
 
 var btnDiv = document.getElementById('btn-div');
-var deckDota = document.querySelector('.deckDota');
+var deckLol = document.querySelector('.deckLol');
 var trunfoDota = document.querySelector('.trunfoDota');
 btnDiv.addEventListener('click', function() {
-  if(deckDota.style.display === 'block') {
-      deckDota.style.display = 'none';
+  if(deckLol.style.display === 'block') {
+      deckLol.style.display = 'none';
       trunfoDota.style.display = 'block';
   } else {
-      deckDota.style.display = 'block';
+      deckLol.style.display = 'block';
       trunfoDota.style.display = 'none';
   }
 });
-
-
-
-
-
-
-
-
-
 
 
 //-------------------------------------------------------------------------
@@ -30,7 +21,7 @@ btnDiv.addEventListener('click', function() {
 
 
 const listaSelecaoPokemons = document.querySelectorAll('.pokemon')
-const pokemonsCard = document.querySelectorAll('.cartao-pokemon')
+const pokemonsCard = document.querySelectorAll('.cartao-lol')
 
 listaSelecaoPokemons.forEach(pokemon => {
 
@@ -72,18 +63,18 @@ var carta0 = {
 };
 
 var carta1 = {
-  nome: "Ekko",
-  avatar:  "https://i.pinimg.com/564x/c3/60/a7/c360a7f448769a22a336b639c955dbb1.jpg",
+  nome: "Shyvana",
+  avatar:  "https://preview.redd.it/c52avlrasmu21.jpg?auto=webp&s=02cdddf7d2fda4aac20c84befd51c3de1d31c037",
   atributos: {
-    Stregth: 28,
+    Stregth: 35,
     Agility: 33,
-    Intelligence: 25
+    Intelligence: 15
   }
 };
 
 var carta2 = {
   nome: "Blitzcrank",
-  avatar:    "https://i.pinimg.com/564x/19/76/18/1976182850acaa5cf5546f11149e20e3.jpg",
+  avatar:    "https://i.pinimg.com/originals/05/dd/a8/05dda80b2ff79d6c9486dddf85160c2b.jpg",
   atributos: {
     Stregth: 35,
     Agility: 15,
@@ -94,7 +85,7 @@ var carta2 = {
 var carta3 = {
   nome: "Ashe",
   avatar:
-    "https://i.pinimg.com/564x/0a/8f/f7/0a8ff7b3be29c7e297b65b691e49b68b.jpg",
+    "https://i.pinimg.com/originals/73/bf/a9/73bfa9f186e5a9444364c4b67b8d25e5.jpg",
   atributos: {
     Stregth: 31,
     Agility: 21,
@@ -105,7 +96,7 @@ var carta3 = {
 var carta4 = {
   nome: "Yasuo",
   avatar:
-    "https://i.pinimg.com/564x/0a/47/47/0a474778702793aeff216c4fddb1281e.jpg",
+    "https://i.pinimg.com/474x/bb/61/8d/bb618d5f370cb46c5b043fd6fdc65fe4.jpg",
   atributos: {
     Stregth: 44,
     Agility: 44,
@@ -115,7 +106,7 @@ var carta4 = {
 
 var carta5 = {
   nome: "Camile",
-  avatar: "https://i.pinimg.com/564x/d1/1a/17/d11a17a1b34060b7f8baa237d2dae804.jpg",
+  avatar: "https://wallpapersflix.com/lol/wp-content/uploads/2020/07/camille-League-of-Legends-Wallpaper.jpg",
   atributos: {
     Stregth: 47,
     Agility: 39,
@@ -125,7 +116,7 @@ var carta5 = {
 
 var carta6 = {
   nome: "Cho'gath",
-  avatar: "https://i.pinimg.com/564x/2d/c1/2f/2dc12ff47b2a49ecf21701df5cd82b0c.jpg",
+  avatar: "http://www.usefulcraft.com/wp-content/uploads/2019/12/chogath-2.jpg",
   atributos: {
     Stregth: 60,
     Agility: 1,
@@ -135,7 +126,7 @@ var carta6 = {
 
 var carta7 = {
   nome: "Bardo",
-  avatar:    "https://i.pinimg.com/564x/71/64/7d/71647d4c32eb84dc867f8635d2ad02cd.jpg",
+  avatar:    "https://i.redd.it/7ztrm0t6av621.jpg",
   atributos: {
     Stregth: 28,
     Agility: 11,
@@ -146,7 +137,7 @@ var carta7 = {
 var carta8 = {
   nome: "Akali",
   avatar:
-    "https://i.pinimg.com/564x/71/5f/79/715f79b373e1e331541f451bf293a3ab.jpg",
+    "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6303268c-f2c7-4dce-8cbb-3b49bd9dd6af/df0noq7-82ab18bd-80ab-48ab-8ffd-77e217794f9d.png/v1/fill/w_632,h_1264,q_70,strp/akali___league_of_legends___mobile_by_gabe_flint_df0noq7-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjA0OCIsInBhdGgiOiJcL2ZcLzYzMDMyNjhjLWYyYzctNGRjZS04Y2JiLTNiNDliZDlkZDZhZlwvZGYwbm9xNy04MmFiMThiZC04MGFiLTQ4YWItOGZmZC03N2UyMTc3OTRmOWQucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.dgYLVpNnSFtKerPqRWzs9cH-ZjLNBHJUvEU0sxKbe1s",
   atributos: {
     Stregth: 35,
     Agility: 49,
@@ -244,7 +235,7 @@ function resetaTela() {
 
   // resetanto o painel central
   document.getElementById("info-center").innerHTML =
-    "Vamos Duelar! <br><br> Aceita o Desafio?";
+    "Play again?";
 
   // resetanto o painel da dieita
   document.getElementById("right-label").style.color = "rgba(0, 0, 0, 0)";
@@ -448,13 +439,13 @@ function fimDeJogo() {
   var mensagem;
 
   if (ganhador == 1) {
-    mensagem = "Congratulations!!!<br><br>You Win<br><br>the Battle!";
+    mensagem = "Congratulations!!!<br><br>You Win!";
   } else {
     mensagem = "Defeat!<br><br>You Lose<br><br>the Battle!";
   }
 
   painelInfo.innerHTML = mensagem;
-  botao.innerHTML = "Reiniciar Jogo";
+  botao.innerHTML = "Play again";
   botao.setAttribute("onclick", "reiniciarJogo()");
 }
 
@@ -474,9 +465,9 @@ function reiniciarJogo() {
   document.getElementById("cartas-jogador").innerHTML = "Player<br>Cards: <br> 4";
   document.getElementById("cartas-maquina").innerHTML = "Machine<br>Cards: <br> 4";
 
-  painelInfo.innerHTML = "Vamos Duelar! <br><br> Aceita o Desafio?";
+  painelInfo.innerHTML = "GG WP. That was fun!";
 
-  botao.innerHTML = "Iniciar Torneio";
+  botao.innerHTML = "Click to play";
   botao.onclick = function () {
     iniciarJogo();
   };

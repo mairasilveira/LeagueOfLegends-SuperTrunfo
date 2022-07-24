@@ -150,15 +150,6 @@ button:disabled {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* //CSS DO DECK ABAIXO// */
 
 
@@ -174,27 +165,27 @@ ul {
   list-style-type: none;
 }
 
-/* //GLOBAL POKEDEXXX */
+/* //GLOBAL */
 
 
 /* // CARTÕES */
 
-.cartao-pokemon {
+.cartao-lol {
   display: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
 }
 
-/* .cartao-pokemon .cartao-topo {
+/* .cartao-lol .cartao-topo {
   
 } */
 
-.cartao-pokemon .nome {
+.cartao-lol .nome {
   display: none;
   margin-bottom: 5px;
 }
 
-.cartao-pokemon .tipo {
+.cartao-lol .tipo {
   display:none;
   font-size: 12px;
   background-color: #E9EDEF;
@@ -204,21 +195,21 @@ ul {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.cartao-pokemon .detalhes {
+.cartao-lol .detalhes {
   display: none;
   color: #E9EDEF;
   justify-content: space-between;
   align-items: center;
 }
 
-.cartao-pokemon .cartao-imagem {
+.cartao-lol .cartao-imagem {
   max-height: 100%;
   max-width: 100%;
   padding-top: 10px;
 
 }
 
-.cartao-pokemon img {
+.cartao-lol img {
   max-height: 100%;
   max-width: 100%;
   border-bottom-left-radius: 8px;
@@ -227,7 +218,7 @@ ul {
   display: block;
 }
 
-.cartao-pokemon .cartao-informacoes {
+.cartao-lol .cartao-informacoes {
   display: flex;
   justify-content: space-between;
   background-color: #E9EDEF;
@@ -237,25 +228,25 @@ ul {
   border-bottom-right-radius: 8px;
 }
 
-.cartao-pokemon .cartao-informacoes h3 {
+.cartao-lol .cartao-informacoes h3 {
   font-size: 20px;
   margin-bottom: 15px;
   border-bottom: 1px solid #6B727A;
 }
 
-.cartao-pokemon .cartao-informacoes .status, .cartao-pokemon .cartao-informacoes .habilidades {
+.cartao-lol .cartao-informacoes .status, .cartao-lol .cartao-informacoes .habilidades {
   padding: 0 10px;
   width: 180px;
 }
 
-.cartao-pokemon .cartao-informacoes .habilidades ul li, .cartao-pokemon .cartao-informacoes .status ul li {
+.cartao-lol .cartao-informacoes .habilidades ul li, .cartao-lol .cartao-informacoes .status ul li {
   border-bottom: 1px solid #C3C4C5;
   padding: 0 0 5px;
   margin-bottom: 5px;
   font-size: 15px;
 }
 
-.cartao-pokemon.aberto {
+.cartao-lol.aberto {
   display: block;
 }
 
@@ -323,87 +314,6 @@ ul {
   background-color: #3f3d9b;
 }
 
-/* // RESPONSIVO TELAS MENORES */
-
-/* @media (max-width: 750px) {
-  body {
-      font-size: 12px;
-  }
-
-  .pokedex {
-      flex-direction: column;
-      padding: 30px 0;
-  }
-
-  .cartao-pokemon {
-      max-width: 300px;
-  }
-
-  .cartao-pokemon .cartao-imagem {
-      width: 100%;
-      height: 100%;
-      margin: auto;
-  }
-
-  .cartao-pokemon .cartao-informacoes {
-      padding: 60px 30px 30px;
-      margin-top: -50px;
-  }
-
-  .cartao-pokemon .cartao-informacoes .informacoes {
-      display: flex;
-      justify-content: space-between;
-      padding: 0;
-  }
-
-  .cartao-pokemon .cartao-informacoes h3 {
-      font-size: 16px;
-  }
-
-  .listagem {
-      max-width: 300px;
-  }
-
-  .listagem ul {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      justify-content: space-between;
-  }
-
-  .listagem .pokemon {
-      width: 140px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      margin-bottom: 0;
-      border-radius: 8px;
-  }
-
-  .listagem .pokemon span {
-      padding-right: 5px;
-  }
-
-}
-
-.banner-dota {
-  text-align: center;
-  align-items: center;
-  padding: 20px;
-  background-color: #000000;
-  max-width: 60%;
-  max-height: 300px;
-  color: #ffffff;
-  margin-right: auto;
-  margin-left: auto;
-}
-.banner-dota > img {
-  text-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-} */
-
-
 .embutido{
   display: flex;
   align-items: center;
@@ -413,7 +323,7 @@ ul {
   margin:auto;
 }
 
-.pokedex {
+.cards {
   gap: 30px;
   padding: 0;
   background: #000000;
@@ -585,7 +495,7 @@ ul {
   margin: auto;
 }
 
-.banner-dota {
+.banner-lol {
   text-align: center;
   align-items: center;
   padding: 20px;
@@ -596,7 +506,7 @@ ul {
   margin-right: auto;
   margin-left: auto;
 }
-.banner-dota > img {
+.banner-lol > img {
   text-align: center;
   align-items: center;
   width: 100%;
@@ -627,10 +537,6 @@ width: 20px;
 height: 20px;
 }
 
-
-
-
-
 .btnDiv{
   background-color: #E9EDEF;
 }
@@ -639,6 +545,6 @@ height: 20px;
   display: none;
 }
 
-.deckDota{
+.deckLol{
   display: block;
 }
