@@ -10,5 +10,5 @@ ver apenas a carta de cima
 4) Vence o jogador que ficar com todas as cartas do baralho
 5) O jogo poderá ser reiniciado ao clicar no botão "play again"
 
-GGWP e divirtam-se!
+GG & have fun!
 
