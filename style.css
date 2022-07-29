@@ -41,27 +41,9 @@ body {
       rgb(59, 58, 58) 4.68391px 5.20201px 0px;
 }
 
-.page-subtitle {
-  color: #ffffff;
-  margin-top: 5px;
-}
-
 .page-logo {
   width: 80px;
 }
-
-.interacao-usuario{
-  max-width: 300px;
-  margin-left: 21%;
-}
-
-/*body > img {
-   margin: 0 10px; 
-
-
-img {
-  max-height: 250px; 
-}*/
 
 button {
   box-shadow: 10px 5px 5px black;
@@ -89,11 +71,6 @@ button:disabled {
   transform: scale(1);
 }
 
-.placar{
-  background-color: blue;
-}
-
-
 .block {
   display: inline-block;
   width: 270px;
@@ -105,6 +82,7 @@ button:disabled {
   font-size: 24px;
   margin: 20px;
 }
+
 .card {
   background-size: cover;
   background-position: center top;
@@ -132,7 +110,6 @@ button:disabled {
   text-transform: capitalize;
 }
 
-
 #ganhou {
   background-color: #259453;
 }
@@ -150,11 +127,8 @@ button:disabled {
 }
 
 
-/* //CSS DO DECK ABAIXO// */
+/* CSS DO DECK */
 
-
-
-/* //Reset// */
 * {
   padding: 0;
   margin: 0;
@@ -165,20 +139,11 @@ ul {
   list-style-type: none;
 }
 
-/* //GLOBAL */
-
-
-/* // CARTÕES */
-
 .cartao-lol {
   display: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
 }
-
-/* .cartao-lol .cartao-topo {
-  
-} */
 
 .cartao-lol .nome {
   display: none;
@@ -250,70 +215,6 @@ ul {
   display: block;
 }
 
-.tipo-fogo {
-  background-color: #C90F14;
-}
-
-.tipo-eletrico {
-  background-color: #383838;
-}
-
-.tipo-agua {
-  background-color: #3290e2;
-}
-
-.tipo-grama {
-  background-color: #259453;
-}
-
-.tipo-trevas {
-  background-color: #BA68C8;
-}
-
-.tipo-dragao {
-  background-color: #C29791;
-}
-
-/* // MENU-LISTA */
-
-.listagem {
-  max-width: 200px;
-}
-
-.listagem .pokemon {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  margin-bottom: 10px;
-  background-color: #383838;
-  color: #E9EDEF;
-  padding: 0 5px;
-  cursor: pointer;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  min-height: 70px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  transition: 0.15s ease-in-out;
-}
-
-.listagem .pokemon:hover {
-  transform: scale(1.05);
-}
-
-.listagem .pokemon img {
-  width: 25%;
-  border-radius: 50%;
-  margin-right: 5%;
-}
-
-.listagem .pokemon span {
-  padding-right: 20px;
-}
-
-.listagem .pokemon.ativo {
-  background-color: #3f3d9b;
-}
-
 .embutido{
   display: flex;
   align-items: center;
@@ -338,7 +239,6 @@ ul {
 }
 
 .div-game {
-  /* background-color: rgba(0, 0, 0, 0.6); */
   background-color: purple;
   display: inline-block;
   width: 65%;
@@ -347,7 +247,6 @@ ul {
   text-align: center;
   margin: auto;
 }
-
 
 .desk {
   display: flex;
@@ -368,8 +267,7 @@ ul {
    background: linear-gradient(0deg, rgb(201, 158, 130) 0%, rgb(251, 185, 2) 100%);
 }
 
-
-#btnJogar{
+#btnJogar {
   width: 180px;
   height: 80px;
   margin: auto;
@@ -380,7 +278,7 @@ ul {
   opacity: 80%;
 }
 
-#card-center{            /*  area do botaaaaoo */
+#card-center {    
   width: 200px;
   height: 100px;
   background-color: #383838;
@@ -389,7 +287,7 @@ ul {
 }
 
 
-#center-label {  /*PLACARRR*/
+#center-label {
   color: rgba(0, 0, 0, 0);
   background-color: #383838;
   box-shadow: 10px 5px 5px black;
@@ -400,7 +298,7 @@ ul {
 }
 
 
-#block-center{
+#block-center {
   background-color: #000000;
   width: 200px;
   height: 600px;
@@ -420,15 +318,13 @@ ul {
   margin: auto;
   padding-top: 10px;
   padding-bottom: 10px;
-  
-
 }
 
-#block-left{
+#block-left {
   margin-right: -17%;
 }
 
-.attribs{
+.attribs {
   margin-top: 400px;
   box-shadow: 10px 5px 5px black;
   border-radius: 5px;
@@ -452,7 +348,7 @@ ul {
   flex-wrap: nowrap;
 }
 
-#div-end{
+#div-end {
   padding:0;
   margin: 0;
   width: 200px;
@@ -486,7 +382,7 @@ ul {
   font-weight: bold;
 }
 
-.contagem-cartas{
+.contagem-cartas {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -513,7 +409,6 @@ ul {
   height: 100%;
 }
 
-
 .line-info {
   padding: 10px;
   margin: 5px;
@@ -529,22 +424,17 @@ ul {
   
 }
 
-
 input {
- align-items: flex-start;
- margin-right: 10px;
-width: 20px;
-height: 20px;
+  align-items: flex-start;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
 }
 
-.btnDiv{
-  background-color: #E9EDEF;
-}
-
-.trunfoLol{
+.trunfoLol {
   display: none;
 }
 
-.deckLol{
+.deckLol {
   display: block;
 }

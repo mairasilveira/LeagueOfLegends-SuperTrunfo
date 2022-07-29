@@ -1,5 +1,4 @@
-// BOTAO MOSTRAR OU ESCONDER 
-
+// Botão mostrar ou esconder 
 
 var btnDiv = document.getElementById('btn-div');
 var deckLol = document.querySelector('.deckLol');
@@ -14,11 +13,7 @@ btnDiv.addEventListener('click', function() {
   }
 });
 
-
-//-------------------------------------------------------------------------
-// DEEEEEEEECK
-
-
+// Deck
 
 const listaSelecaoPokemons = document.querySelectorAll('.pokemon')
 const pokemonsCard = document.querySelectorAll('.cartao-lol')
@@ -46,11 +41,8 @@ listaSelecaoPokemons.forEach(pokemon => {
     })
 })
 
+// Carta de interrogação
 
-//-------------------------------------------------------------------------
-// SUPER TRUNFOOOO
-
-// carta de interrogação
 var carta0 = {
   nome: "",
   avatar:
@@ -154,8 +146,8 @@ var ganhador;
 var partidas = 0;
 var placar = [0, 0, 0];
 
-//-------------------------------------------------------------------------
-// função que inicia o primeiro duelo do torneio
+// Função que inicia o primeiro duelo do torneio
+
 function iniciarJogo() {
   resetaTela();
 
@@ -166,18 +158,20 @@ function iniciarJogo() {
   exibeCarta(carta0, "right");
 
   // Escolhendo o atributo de batalha
+
   document.getElementById("info-center").innerHTML =
     "Choose your attribute<br><br> and go fight!";
 
-  // muda o contexto do botão para a opção duelar
+  // Muda o contexto do botão para a opção duelar
+
   var btnJogar = document.getElementById("btnJogar");
   btnJogar.disabled = true;
   btnJogar.classList.remove("button:active");
   document.getElementById("btnJogar").innerHTML = "Fight!!!";
 }
 
-//-------------------------------------------------------------------------
-// funcao que inicia duelos seguintes do torneio
+// Função que inicia duelos seguintes do torneio
+
 function continuarDuelando() {
   resetaTela();
   sorteiaCartas();
@@ -186,17 +180,19 @@ function continuarDuelando() {
   exibeCarta(carta0, "right");
 
   // Escolhendo o atributo de batalha
+
   document.getElementById("info-center").innerHTML =
     "Choose your attribute<br><br> and go fight!";
 
-  // muda o contexto do botão para a opção duelar
+  // Muda o contexto do botão para a opção duelar
+
   document.getElementById("btnJogar").disabled = true;
 
   document.getElementById("btnJogar").innerHTML = "Fight!!!";
 }
 
-//-------------------------------------------------------------------------
-// funcão que cria os baralhos do jogador e da máquina
+// Funcão que cria os baralhos do jogador e da máquina
+
 function divideCartas() {
   var baralhoTemp = baralho.slice();
   var carta;
@@ -218,35 +214,31 @@ function divideCartas() {
   }
 }
 
-//-------------------------------------------------------------------------
-// função que sorteia as cartas
+// Função que sorteia as cartas
 function sorteiaCartas() {
   cartaJogador = parseInt(Math.random() * baralhoJogador.length);
   cartaMaquina = parseInt(Math.random() * baralhoMaquina.length);
 }
 
-//-------------------------------------------------------------------------
-// funcao que volta a tela para a condição de inicio do jogo
+// Função que volta a tela para a condição de inicio do jogo
 function resetaTela() {
-  // resetanto o painel da esquerda
+  // resetando o painel da esquerda
   document.getElementById("left-label").style.color = "rgba(0, 0, 0, 0)";
   document.getElementById("card-left").style.backgroundImage = "";
   document.getElementById("attribs-left").innerHTML = "";
 
-  // resetanto o painel central
+  // resetando o painel central
   document.getElementById("info-center").innerHTML =
     "Play again?";
 
-  // resetanto o painel da dieita
+  // resetando o painel da direita
   document.getElementById("right-label").style.color = "rgba(0, 0, 0, 0)";
   document.getElementById("card-right").style.backgroundImage = "";
   document.getElementById("attribs-right").innerHTML = "";
 }
 
-//-------------------------------------------------------------------------
-// funcao que exibe uma carta na tela
+// Função que exibe uma carta na tela
 function exibeCarta(carta, posicao) {
-  //var card = carta0;
   var label = document.getElementById(posicao + "-label");
   var divCard = document.getElementById("card-" + posicao);
   var divAttribs = document.getElementById("attribs-" + posicao);
@@ -271,12 +263,12 @@ function exibeCarta(carta, posicao) {
   // mostra a carta
   divCard.style.backgroundImage = 'url("' + carta.avatar + '")';
 
-  //exibe o painel final de informações
+  // exibe o painel final de informações
   document.getElementById("div-end").style.opacity = "0.8";
 }
 
-//-------------------------------------------------------------------------
-// funcão que controla os casos de radio não selecionados
+// Funcão que controla os casos de radio não selecionados
+
 function testaRadio() {
   var radioAtributo = document.getElementsByName("atributo");
   for (var radio in radioAtributo) {
@@ -289,8 +281,8 @@ function testaRadio() {
   }
 }
 
-//-------------------------------------------------------------------------
-// funcão que verifica qual atributo foi escolhido para o duelo
+// Função que verifica qual atributo foi escolhido para o duelo
+
 function obtemAtributoSelecionado() {
   var radioAtributo = document.getElementsByName("atributo");
   for (var radio in radioAtributo) {
@@ -300,8 +292,8 @@ function obtemAtributoSelecionado() {
   }
 }
 
-//-------------------------------------------------------------------------
-// funcão que dispara o duelo e compara as cartas
+// Função que dispara o duelo e compara as cartas
+
 function jogar() {
   var atributoSelecionado = obtemAtributoSelecionado();
   var resultado = document.getElementById("info-center");
@@ -330,8 +322,7 @@ function jogar() {
   }
 }
 
-//-------------------------------------------------------------------------
-// funcão que informa os resultados de duelas e computa os pontos
+// Função que informa os resultados de duelas e computa os pontos
 function computaResultado(resultado) {
   var painelInfo = document.getElementById("info-center");
   ganhador = resultado;
@@ -341,13 +332,15 @@ function computaResultado(resultado) {
   exibeCarta(baralhoMaquina[cartaMaquina], "right");
   imprimeResultado();
 
-  // transfere para o jogador a carta da máquina
+  // Transfere para o jogador a carta da máquina
+
   if (ganhador == 1) {
     baralhoJogador.push(baralhoMaquina[cartaMaquina]);
     baralhoMaquina.splice(cartaMaquina, 1);
   }
 
-  // transfere para a máquina a carta do jogador
+  // Transfere para a máquina a carta do jogador
+
   if (ganhador == 2) {
     baralhoMaquina.push(baralhoJogador[cartaJogador]);
     baralhoJogador.splice(cartaJogador, 1);
@@ -355,8 +348,8 @@ function computaResultado(resultado) {
   atualizaPlacar();
 }
 
-//-------------------------------------------------------------------------
-// funcão que imprime o resultado de um duelo
+// Função que imprime o resultado de um duelo
+
 function imprimeResultado() {
   var atributoSelecionado = obtemAtributoSelecionado();
   var divDest;
@@ -375,7 +368,8 @@ function imprimeResultado() {
     mensagemResultado = "You lose this round!";
   }
 
-  // imprime os blocos de resultado sobre as cartas
+  // Imprime os blocos de resultado sobre as cartas
+
   for (var local of ["attribs-left", "attribs-right"]) {
     divDest = document.getElementById(local);
     if (local == "attribs-left") {
@@ -400,7 +394,6 @@ function imprimeResultado() {
   }
 }
 
-//-------------------------------------------------------------------------
 function atualizaPlacar() {
   var painelInfo = document.getElementById("info-center");
   var labelCentral = document.getElementById("center-label");
@@ -418,21 +411,21 @@ function atualizaPlacar() {
     mensagemResultado = "You lose this round!";
   }
 
-  // imprime as informações do painel central
+  // Imprime as informações do painel central
   painelInfo.innerHTML = mensagemResultado;
 
-  //exibe placar
+  // Exibe placar
   labelCentral.style.color = "#dcdcdc";
   labelCentral.innerHTML = placar[1] + " x " + placar[2];
 
-  // exibe contagem de cartas e partida
+  // Exibe contagem de cartas e partida
   labelPartidas.innerHTML = "Rounds played: <br>" + partidas;
   cartasJogador.innerHTML = "Player<br>Cards: <br>" + baralhoJogador.length;
   cartasMaquina.innerHTML = "Machine<br>Cards: <br>" + baralhoMaquina.length;
 }
 
-//-------------------------------------------------------------------------
-// exibe mensagens quando um jogador fica com todas as cartas
+// Exibe mensagens quando um jogador fica com todas as cartas
+
 function fimDeJogo() {
   var painelInfo = document.getElementById("info-center");
   var botao = document.getElementById("btnJogar");
@@ -449,8 +442,8 @@ function fimDeJogo() {
   botao.setAttribute("onclick", "reiniciarJogo()");
 }
 
-//-------------------------------------------------------------------------
-// volta tudo ao ponto zero
+// Volta tudo ao ponto zero
+
 function reiniciarJogo() {
   var painelInfo = document.getElementById("info-center");
   var botao = document.getElementById("btnJogar");
