@@ -3,14 +3,14 @@
 
 var btnDiv = document.getElementById('btn-div');
 var deckLol = document.querySelector('.deckLol');
-var trunfoDota = document.querySelector('.trunfoDota');
+var trunfoLol = document.querySelector('.trunfoLol');
 btnDiv.addEventListener('click', function() {
   if(deckLol.style.display === 'block') {
       deckLol.style.display = 'none';
-      trunfoDota.style.display = 'block';
+      trunfoLol.style.display = 'block';
   } else {
       deckLol.style.display = 'block';
-      trunfoDota.style.display = 'none';
+      trunfoLol.style.display = 'none';
   }
 });
 
@@ -467,7 +467,7 @@ function reiniciarJogo() {
 
   painelInfo.innerHTML = "GG WP. That was fun!";
 
-  botao.innerHTML = "Click to play";
+  botao.innerHTML = "Play again";
   botao.onclick = function () {
     iniciarJogo();
   };

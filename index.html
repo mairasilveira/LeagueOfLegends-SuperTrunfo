@@ -1,137 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br" >
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <title>LOL Battle Game</title>
   <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<body>
-  <div class="div-background">
-    <div class="container">
-      <div class="div-title">
-        <h1 class="page-title">
-          <strong>LOL<br>Battle Cards Game</strong>
-        </h1>
+  <body>
+    <div class="div-background">
+      <div class="container">
+        <div class="div-title">
+          <h1 class="page-title">
+            <strong>LOL<br>Battle Cards Game</strong>
+          </h1>
+        </div>
       </div>
     </div>
-    </div>
-
     <header>
-      
-      
       <div class="banner-lol">
-        <img src="https://media.wired.co.uk/photos/606da933f19707fe1aef35b3/16:9/w_1280,c_limit/lol_1.jpg" class="page-logo" alt="">
+        <img src="https://media.wired.co.uk/photos/606da933f19707fe1aef35b3/16:9/w_1280,c_limit/lol_1.jpg"
+          class="page-logo" alt="">
         <h1 class="page-title">BATTLE CARDS<br>GAME</h1>
       </div>
-      
       <button id='btn-div'>Double click to play</button>
     </header>
-
     <div class="deckLol">
-    
     </div>
-
-    <div class="trunfoDota">
-    <div class="div-game kunai" id="div-game">
-      <div class="desk">
-
-
-        
-        <div class="block" id="block-left">
-          <h3 class="card-label" id="left-label"> Your Hero</h3>
-          <div class="card" id="card-left">
-            <div class="info">
-              <div class="attribs" id="attribs-left">
+    <div class="trunfoLol">
+      <div class="div-game kunai" id="div-game">
+        <div class="desk">
+          <div class="block" id="block-left">
+            <h3 class="card-label" id="left-label"> Your Hero</h3>
+            <div class="card" id="card-left">
+              <div class="info">
+                <div class="attribs" id="attribs-left">
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      
-
-        <div class="block" id="block-center">
-          <div class="div-end" id="div-end">
-            <div class="end-info kunai">
-              <label class="kunai" id="partidas">
-                Rounds played: 0
-              </label>
-            </div>
-            <br>
-            <div class="contagem-cartas" id="contagemmm" >
+          <div class="block" id="block-center">
+            <div class="div-end" id="div-end">
               <div class="end-info kunai">
-                <label class="kunai" id="cartas-jogador">Player<br>Cards: <br>4</label>
+                <label class="kunai" id="partidas">
+                  Rounds played: 0
+                </label>
               </div>
               <br>
-              <div class="end-info kunai">
-                <label class="kunai" id="cartas-maquina">Machine<br>Cards: <br>4</label>
+              <div class="contagem-cartas">
+                <div class="end-info kunai">
+                  <label class="kunai" id="cartas-jogador">Player<br>Cards: <br>4</label>
+                </div>
+                <br>
+                <div class="end-info kunai">
+                  <label class="kunai" id="cartas-maquina">Machine<br>Cards: <br>4</label>
+                </div>
               </div>
             </div>
-        </div>
-
-
-
-          <h3 class="card-label" id="center-label">Placar</h3>
-
-
-          <strong>
-            <p id="info-center"> x1 nooooob! <br><br> Challenge Accept?</p>
-          </strong>
-          
-
-          
-          <div class="card" id="card-center">
-            
-            <button type="button" class="kunai" id="btnJogar" onclick="iniciarJogo()">Play</button>
-   
-
-
-
+            <h3 class="card-label" id="center-label">Placar</h3>
+            <strong>
+              <p id="info-center"> x1 nooooob! <br><br> Challenge Accept?</p>
+            </strong>
+            <div class="card" id="card-center">
+              <button type="button" class="kunai" id="btnJogar" onclick="iniciarJogo()">Play</button>
+            </div>
           </div>
-        </div>
-
-
-
-
-
-
-        <div class="block" id="block-right">
-          <h3 class="card-label" id="right-label"> Your Opponent</h3>
-          <div class="card" id="card-right">
-            <div class="info">
-              <div class="attribs" id="attribs-right">
+          <div class="block" id="block-right">
+            <h3 class="card-label" id="right-label"> Your Opponent</h3>
+            <div class="card" id="card-right">
+              <div class="info">
+                <div class="attribs" id="attribs-right">
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-
       </div>
-
-
-
-
-
-      
-      
-      
-
-    
-    
-    
     </div>
-    </div>
-
-
-
-
-
-
-
-</body>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
+  </body>
+  <script src="script.js"></script>
 </body>
 </html>
