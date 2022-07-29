@@ -12,3 +12,4 @@ ver apenas a carta de cima
 
 GG & have fun!
 
+<div align = "center"><img src="https://hightechnews.info/wp-content/uploads/2020/06/O-jogo-de-cartas-gratis-Legends-of-Runeterra-e-lancado.jpg" alt="illustrative-image" height="270"></div>
