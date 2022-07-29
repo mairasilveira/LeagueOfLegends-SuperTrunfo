@@ -1,5 +1,5 @@
 # LeagueOfLegends-SuperTrunfo
-Versão do famoso jogo Super Trunfo, feito com cartas de campeões de um dos meus jogos favoritos: o League Of Legends. 
+<h2>Versão do famoso jogo Super Trunfo, feito com cartas de campeões de um dos meus jogos favoritos: o League Of Legends.</h2>
 
 <ol>Tutorial:
 
@@ -11,6 +11,6 @@ Versão do famoso jogo Super Trunfo, feito com cartas de campeões de um dos meu
 <li>O jogo poderá ser reiniciado ao clicar no botão "play again"</li>
 </ol>
 
-GG & have fun!
+<h3>GG & have fun!</h3>
 
 <div align = "center"><img src="https://hightechnews.info/wp-content/uploads/2020/06/O-jogo-de-cartas-gratis-Legends-of-Runeterra-e-lancado.jpg" alt="illustrative-image" height="270"></div>
