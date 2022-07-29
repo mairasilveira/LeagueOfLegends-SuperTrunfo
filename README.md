@@ -1,5 +1,5 @@
 # LeagueOfLegends-SuperTrunfo
-Versão do famoso jogo Super Trunfo, feito com cartas de campeões do League Of Legends. 
+Versão do famoso jogo Super Trunfo, feito com cartas de campeões de um dos meus jogos favoritos: o League Of Legends. 
 
 Tutorial:
 
