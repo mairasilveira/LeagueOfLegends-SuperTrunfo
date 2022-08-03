@@ -1,132 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <title>LOL Battle Game</title>
-        <link rel="stylesheet" href="style.css" />
-        <link
-            rel="preload"
-            as="image"
-            href="https://www.yardgreetings.com/wp-content/uploads/2018/03/symbol-question-mark-black-and-white-yard-greeting-card-sign-happy-birthday-over-the-hill-plastic-600x600.jpg"
-        />
-        <link
-            rel="preload"
-            as="image"
-            href="https://preview.redd.it/c52avlrasmu21.jpg?auto=webp&s=02cdddf7d2fda4aac20c84befd51c3de1d31c037"
-        />
-        <link
-            rel="preload"
-            as="image"
-            href="https://i.pinimg.com/originals/05/dd/a8/05dda80b2ff79d6c9486dddf85160c2b.jpg"
-        />
-        <link
-            rel="preload"
-            as="image"
-            href="https://i.pinimg.com/originals/73/bf/a9/73bfa9f186e5a9444364c4b67b8d25e5.jpg"
-        />
-        <link
-            rel="preload"
-            as="image"
-            href="https://i.pinimg.com/474x/bb/61/8d/bb618d5f370cb46c5b043fd6fdc65fe4.jpg"
-        />
-        <link
-            rel="preload"
-            as="image"
-            href="https://wallpapersflix.com/lol/wp-content/uploads/2020/07/camille-League-of-Legends-Wallpaper.jpg"
-        />
-        <link
-            rel="preload"
-            as="image"
-            href="http://www.usefulcraft.com/wp-content/uploads/2019/12/chogath-2.jpg"
-        />
-        <link
-            rel="preload"
-            as="image"
-            href="https://i.redd.it/7ztrm0t6av621.jpg"
-        />
-        <link
-            rel="preload"
-            as="image"
-            href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6303268c-f2c7-4dce-8cbb-3b49bd9dd6af/df0noq7-82ab18bd-80ab-48ab-8ffd-77e217794f9d.png/v1/fill/w_632,h_1264,q_70,strp/akali___league_of_legends___mobile_by_gabe_flint_df0noq7-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjA0OCIsInBhdGgiOiJcL2ZcLzYzMDMyNjhjLWYyYzctNGRjZS04Y2JiLTNiNDliZDlkZDZhZlwvZGYwbm9xNy04MmFiMThiZC04MGFiLTQ4YWItOGZmZC03N2UyMTc3OTRmOWQucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.dgYLVpNnSFtKerPqRWzs9cH-ZjLNBHJUvEU0sxKbe1s"
-        />
-    </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>LOL Battle Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" as="image"
+    href="https://www.yardgreetings.com/wp-content/uploads/2018/03/symbol-question-mark-black-and-white-yard-greeting-card-sign-happy-birthday-over-the-hill-plastic-600x600.jpg" />
+  <link rel="preload" as="image"
+    href="https://preview.redd.it/c52avlrasmu21.jpg?auto=webp&s=02cdddf7d2fda4aac20c84befd51c3de1d31c037" />
+  <link rel="preload" as="image" href="https://i.pinimg.com/originals/05/dd/a8/05dda80b2ff79d6c9486dddf85160c2b.jpg" />
+  <link rel="preload" as="image" href="https://i.pinimg.com/originals/73/bf/a9/73bfa9f186e5a9444364c4b67b8d25e5.jpg" />
+  <link rel="preload" as="image" href="https://i.pinimg.com/474x/bb/61/8d/bb618d5f370cb46c5b043fd6fdc65fe4.jpg" />
+  <link rel="preload" as="image"
+    href="https://wallpapersflix.com/lol/wp-content/uploads/2020/07/camille-League-of-Legends-Wallpaper.jpg" />
+  <link rel="preload" as="image" href="http://www.usefulcraft.com/wp-content/uploads/2019/12/chogath-2.jpg" />
+  <link rel="preload" as="image" href="https://i.redd.it/7ztrm0t6av621.jpg" />
+  <link rel="preload" as="image"
+    href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6303268c-f2c7-4dce-8cbb-3b49bd9dd6af/df0noq7-82ab18bd-80ab-48ab-8ffd-77e217794f9d.png/v1/fill/w_632,h_1264,q_70,strp/akali___league_of_legends___mobile_by_gabe_flint_df0noq7-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjA0OCIsInBhdGgiOiJcL2ZcLzYzMDMyNjhjLWYyYzctNGRjZS04Y2JiLTNiNDliZDlkZDZhZlwvZGYwbm9xNy04MmFiMThiZC04MGFiLTQ4YWItOGZmZC03N2UyMTc3OTRmOWQucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.dgYLVpNnSFtKerPqRWzs9cH-ZjLNBHJUvEU0sxKbe1s" />
+</head>
 
 <body>
-    <div class="div-background">
-      <div class="container">
-        <div class="div-title">
-          <h1 class="page-title">
-            <strong>LOL<br>Battle Cards Game</strong>
-          </h1>
-        </div>
+  <div class="div-background">
+    <div class="container">
+      <div class="div-title">
+        <h1 class="page-title">
+          <strong>LOL<br>Battle Cards Game</strong>
+        </h1>
       </div>
     </div>
+  </div>
 
-    <header>
-      <div class="banner-lol">
-        <img src="https://media.wired.co.uk/photos/606da933f19707fe1aef35b3/16:9/w_1280,c_limit/lol_1.jpg"
-          class="page-logo">
-        <h1 class="page-title">BATTLE CARDS<br>GAME</h1>
-      </div>
-      <button id='btn-div'>Double click to play</button>
-    </header>
-    
-    <div class="deckLol">
+  <header>
+    <div class="banner-lol">
+      <img src="https://media.wired.co.uk/photos/606da933f19707fe1aef35b3/16:9/w_1280,c_limit/lol_1.jpg"
+        class="page-logo">
+      <h1 class="page-title">BATTLE CARDS<br>GAME</h1>
     </div>
-    <div class="trunfoLol">
-      <div class="div-game kunai" id="div-game">
-        <div class="desk">
-          <div class="block" id="block-left">
-            <h3 class="card-label" id="left-label"> Your Hero</h3>
-            <div class="card" id="card-left">
-              <div class="info">
-                <div class="attribs" id="attribs-left">
-                </div>
+    <button id='btn-div'>Double click to play</button>
+  </header>
+
+  <div class="deckLol">
+  </div>
+  <div class="trunfoLol">
+    <div class="div-game kunai" id="div-game">
+      <div class="desk">
+        <div class="block" id="block-left">
+          <h3 class="card-label" id="left-label"> Your Hero</h3>
+          <div class="card" id="card-left">
+            <div class="info">
+              <div class="attribs" id="attribs-left">
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="block" id="block-center">
-            <div class="div-end" id="div-end">
+        <div class="block" id="block-center">
+          <div class="div-end" id="div-end">
+            <div class="end-info kunai">
+              <label class="kunai" id="partidas">
+                Rounds played: 0
+              </label>
+            </div>
+            <br>
+            <div class="contagem-cartas">
               <div class="end-info kunai">
-                <label class="kunai" id="partidas">
-                  Rounds played: 0
-                </label>
+                <label class="kunai" id="cartas-jogador">Player<br>Cards: <br>4</label>
               </div>
               <br>
-              <div class="contagem-cartas">
-                <div class="end-info kunai">
-                  <label class="kunai" id="cartas-jogador">Player<br>Cards: <br>4</label>
-                </div>
-                <br>
-                <div class="end-info kunai">
-                  <label class="kunai" id="cartas-maquina">Machine<br>Cards: <br>4</label>
-                </div>
+              <div class="end-info kunai">
+                <label class="kunai" id="cartas-maquina">Machine<br>Cards: <br>4</label>
               </div>
             </div>
-
-            <h3 class="card-label" id="center-label">Placar</h3>
-            <strong>
-              <p id="info-center"> x1 nooooob! <br><br> Challenge Accept?</p>
-            </strong>
-            <div class="card" id="card-center">
-              <button type="button" class="kunai" id="btnJogar" onclick="iniciarJogo()">Play</button>
-            </div>
           </div>
-          <div class="block" id="block-right">
-            <h3 class="card-label" id="right-label"> Your Opponent</h3>
-            <div class="card" id="card-right">
-              <div class="info">
-                <div class="attribs" id="attribs-right">
-                </div>
+
+          <h3 class="card-label" id="center-label">Placar</h3>
+          <strong>
+            <p id="info-center"> x1 nooooob! <br><br> Challenge Accept?</p>
+          </strong>
+          <div class="card" id="card-center">
+            <button type="button" class="kunai" id="btnJogar" onclick="iniciarJogo()">Play</button>
+          </div>
+        </div>
+        <div class="block" id="block-right">
+          <h3 class="card-label" id="right-label"> Your Opponent</h3>
+          <div class="card" id="card-right">
+            <div class="info">
+              <div class="attribs" id="attribs-right">
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
   <script src="script.js"></script>
-  
+
 </body>
+
 </html>
