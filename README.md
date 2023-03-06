@@ -13,4 +13,4 @@
 
 <h3>GG & have fun!</h3>
 
-<div align = "center"><img src="https://hightechnews.info/wp-content/uploads/2020/06/O-jogo-de-cartas-gratis-Legends-of-Runeterra-e-lancado.jpg" alt="illustrative-image" height="270"></div>
+<div align = "center"><img src="https://i.blogs.es/d39985/cardbacks/1366_2000.webp" height="270"></div>
